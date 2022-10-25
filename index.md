@@ -9,7 +9,7 @@ seo:
     title: Andrew Aquilina
 ---
 
-Hello! I have recently graduated with a M.Sc. in Artificial Intelligence from **Stockholm University** and currently pursuing freestanding courses at **Karolinska University**.  I am also working as a Data Scientist within the Marketing Team at **Sambla Group**.
+Hello! I have recently graduated with a M.Sc. in Artificial Intelligence from **Stockholm University** and currently pursuing freestanding courses at **Karolinska Institute**.  I am also working as a Data Scientist within the Marketing Team at **Sambla Group**.
 
 My primary interests are in computational social psychology, computational linguistics, and cognitive science -- namely, how can we build computational models to represent and to understand human social behaviour?
 
