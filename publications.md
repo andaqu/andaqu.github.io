@@ -5,7 +5,7 @@ layout: page
 
 ### 2023
 
-* **Aquilina, A.**, Diacono, S., Papapetrou P., & Movin M. Topic segmentation and text summarisation methods for podcast data. In Proceedings of the 21st International Symposium on Intelligent Data Analysis, IDA ’23, Louvain-la-Neuve, Belgium, 2023. Springer Nature (Submitted).
+* **Aquilina, A.**, Diacono, S., Papapetrou, P., & Movin, M. Topic segmentation and text summarisation methods for podcast data. In Proceedings of the 21st International Symposium on Intelligent Data Analysis, IDA ’23, Louvain-la-Neuve, Belgium, 2023. Springer Nature (Submitted).
 
 
 ### 2022

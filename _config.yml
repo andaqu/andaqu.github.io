@@ -27,7 +27,7 @@ linkedin_username: andrew-aquilina
 
 curriculum:
   name: Curriculum vitae
-  url: assets/pdf/CV.pdf
+  url: assets/pdf/Resume.pdf
 
 # Build settings
 markdown: kramdown
