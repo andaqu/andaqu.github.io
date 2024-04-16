@@ -18,11 +18,8 @@ github_link: https://github.com/andaqu
 linkedin: https://www.linkedin.com/in/andrew-aquilina
 twitter: https://twitter.com/andruaquilina
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+# Images (e.g., your profile picture)
 avatar: ./assets/img/avatar.jpg
-favicon: ./assets/img/favicon.png
-favicon_dark: ./assets/img/favicon-dark.png
 
 # Footnote
 # You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
