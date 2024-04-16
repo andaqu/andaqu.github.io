@@ -1,0 +1,17 @@
+main:
+
+  - title: Predicting links in a social network based on recognised personalities
+    authors: <strong>Andrew Aquilina</strong>, Charlie Abela
+    conference_short: ACM/SIGAPP
+    conference: Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing
+    pdf: https://dl.acm.org/doi/10.1145/3477314.3506995
+    code: https://github.com/andaqu/palp-boost
+    image: ./assets/img/palpboost.png
+
+  - title: "An End-to-End Workflow using Topic Segmentation and Text Summarisation Methods for Improved Podcast Comprehension"
+    authors: <strong>Andrew Aquilina</strong>, Sean Diacono, Panagiotis Papapetrou, Maria Movin
+    conference_short: preprint
+    conference: arXiv preprint
+    pdf: https://arxiv.org/pdf/2307.13394.pdf
+    code: https://github.com/seandiacono/Spotify-Topic-Segmentation
+    image: ./assets/img/podcasts.png
