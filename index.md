@@ -12,15 +12,15 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 ## Education
 
-<!-- <div style="overflow: auto;">
+<div style="overflow: auto;">
     <div style="float: left; margin-right: 20px;">
         <img style="max-width: 100px; padding: 10px;" src="assets/img/pitt.png">
     </div>
     <div>
-        <p><strong>Sep. 2024 - Present</strong>, Department of Informatics and Networked Systems, <strong>University of Pittsburgh</strong>,</p>
-        <p>Doctor of Philosophy in Information Science.</p>
+        <p><strong>To start Sep. 2024</strong>, Department of Informatics and Networked Systems, <strong>University of Pittsburgh</strong>,</p>
+        <p>Doctor of Philosophy in Information Science (Expected).</p>
     </div>
-</div> -->
+</div>
 
 <div style="overflow: auto;">
     <div style="float: left; margin-right: 20px;">
@@ -38,7 +38,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
     </div>
     <div>
         <p><strong>Oct. 2018 - Jun. 2021</strong>, Department of Artificial Intelligence, <strong>University of Malta</strong>,</p>
-        <p>Bachelor of Science in Information Technology, Artificial Intelligence (graduated with First Class).</p>
+        <p>Bachelor of Science in Information Technology, Artificial Intelligence (with First Class honours).</p>
     </div>
 </div>
 
