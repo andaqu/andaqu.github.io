@@ -92,7 +92,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 ## A bit about me
 
-🏝️ I'm from a very small island in the Mediterranean called Malta. It's a beautiful place, you should come visit!
+🏝️ I'm from a very small island in the Mediterranean called [Malta](https://en.wikipedia.org/wiki/Malta). It's a beautiful place, you should come visit!
 
 🕹️ My all-time favourite video game has to be the original Deus Ex. One of the best stories ever told in a game. I served as a beta tester for an overhaul mod called [Deus Ex: Revision](https://store.steampowered.com/app/397550/Deus_Ex_Revision/), which I highly recommend.
 
@@ -100,8 +100,8 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 🐧 I used to have a blog about Club Penguin when I was 12. I had even convinced my mum to buy me a .com domain for it! It was a simpler time.
 
-🍫 A hill I'd die on? Mint chocolate is humanity's greatest blunder.
+🍫 A hill I'd die on? Mint chocolate is humanity's greatest mistake.
 
 🌳 Living in Sweden for a couple of years made me realise how much I value proximity to nature. Nothing better than a walk in the woods to clear your head.
 
-🚵 I learnt how to ride a bike at the age of 23. Never late to learn!
+🚵 I learnt how to ride a bike at the age of 23. Never too late to learn!
