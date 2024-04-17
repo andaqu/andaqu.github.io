@@ -103,3 +103,5 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 🍫 A hill I'd die on? Mint chocolate is humanity's greatest blunder.
 
 🌳 Living in Sweden for a couple of years made me realise how much I value proximity to nature. Nothing better than a walk in the woods to clear your head.
+
+🚵 I learnt how to ride a bike at the ripe age of 23. Never too late to learn!
