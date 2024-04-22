@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-Hello! I am an incoming Ph.D. student in the [Department of Informatics and Networked Systems](https://www.dins.pitt.edu/) at the [University of Pittsburgh](https://pitt.edu/). I shall be working with [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
+Hello! I am an incoming Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I shall be working with [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
 
 My research interests lie at the intersection of **Computational Social Science** and **NLP**. Specifically, I am interested in harnessing language and its situated nature to understand human social behaviour and affect positive societal change. I am also keen to explore the risks and harms introduced by NLP models and pipelines, and how to establish their ethical integrity through responsible AI practices.
 
