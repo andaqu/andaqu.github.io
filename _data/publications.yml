@@ -6,6 +6,7 @@ main:
     conference: Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing
     pdf: https://dl.acm.org/doi/10.1145/3477314.3506995
     code: https://github.com/andaqu/palp-boost
+    poster: ./assets/files/poster.pdf
     image: ./assets/img/palpboost.png
 
   - title: "An End-to-End Workflow using Topic Segmentation and Text Summarisation Methods for Improved Podcast Comprehension"
