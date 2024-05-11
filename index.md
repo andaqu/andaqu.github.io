@@ -6,7 +6,7 @@ Hello! I am an incoming Ph.D. student at the [School of Computing and Informatio
 
 My research interests lie at the intersection of **Computational Social Science** and **NLP**. Specifically, I am interested in harnessing language and its situated nature to understand human social behaviour and affect positive societal change. I am also keen to explore the risks and harms introduced by NLP models and pipelines, and how to establish their ethical integrity through responsible AI practices.
 
-I have previously graduated with a master’s in AI from Stockholm University, where I worked in collaboration with Spotify to investigate how podcast comprehension can be improved using a pipeline combining topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
+I have previously graduated with a master’s in AI from Stockholm University, where I worked in collaboration with a Ph.D student working at Spotify to investigate how podcast comprehension can be improved using a pipeline combining topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
 Before my move to Stockholm, I also completed my bachelor’s in AI at the University of Malta, where I worked with [Dr. Charlie Abela](https://www.um.edu.mt/profile/charlieabela) to explore the relationship between users’ Big Five personality traits and the social connections they create within a real-world Twitter network.
 
