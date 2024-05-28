@@ -8,8 +8,8 @@ My research interests encompass the fields of computational social science and n
 
 <ol>
   <li>In which ways can the study of language use inform our understanding of human social behaviour?</li>
-  <li>How can we build NLP applications that cater for the needs of marginalised populations and diverse backgrounds?</li>
-  <li>How can we apply such technologies to steer communities towards improving their well-being and mitigate conflicts?</li>
+  <li>How can we build NLP applications that cater for the needs of marginalised populations?</li>
+  <li>How can we apply these technologies to steer communities towards improving their well-being and mitigate conflicts?</li>
 </ol>
 
 I have previously graduated with a master’s in AI from Stockholm University, where I worked with a Ph.D student from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
