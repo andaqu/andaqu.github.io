@@ -7,7 +7,7 @@ Hello! I am an incoming Ph.D. student at the [School of Computing and Informatio
 My research interests encompass the fields of computational social science and natural language processing. I aim to contribute to the development of <span style="color:orange;">responsible AI technologies that aim to bridge social divides and promote common good</span>. The research questions that particularly intrigue me, each informing the next, are:
 
 <ol>
-  <li>How does the study of language use inform our understanding of human social behaviour?</li>
+  <li>How can the study of language use inform our understanding of human social behaviour?</li>
   <li>How can we build NLP applications that cater for the needs of marginalised populations and diverse backgrounds?</li>
   <li>How can we apply such technologies to steer communities towards improving their well-being and mitigate conflicts?</li>
 </ol>
