@@ -4,12 +4,14 @@ layout: homepage
 
 Hello! I am an incoming Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I shall be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
 
-My research interests lie at the intersection of computational social science and natural language processing. I aim to contribute to the development of socially responsible AI technologies that seek to bridge social divides and promote the common good. Specifically, with each research question informing the next:
+My research interests encompass the fields of <span style="color:blue;">computational social science</span> and <span style="color:darkgreen;">natural language processing</span>. I aim to contribute to the development of <span style="color:yellow;">responsible AI technologies</span> that aim to <span style="color:orange;">bridge social divides</span>. The research questions that particularly intrigue me, each informing the next, are as follows:
+
 <ol>
-  <li>What can language use tell us about human social behaviour?</li>
-  <li>How can we build NLP technologies that cater for marginalised populations?</li>
-  <li>How can we apply them to steer communities towards improving their mental health and mitigate conflicts?</li>
+  <li>How does the study of language use inform our understanding of <span style="color:blue;">human social behaviour</span>?</li>
+  <li>How can we build NLP applications that <span style="color:yellow;">cater for the needs of marginalised populations</span> and diverse backgrounds?</li>
+  <li>How can we apply such technologies to <span style="color:orange;">steer communities towards improving their well-being</span>, including but not limited to improving their mental health and mitigate conflicts?</li>
 </ol>
+
 
 I have previously graduated with a master’s in AI from Stockholm University, where I worked with a Ph.D student from Spotify to investigate how podcast comprehension can be improved using a pipeline combining topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
