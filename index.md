@@ -4,7 +4,7 @@ layout: homepage
 
 Hello! I am an incoming Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I shall be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
 
-My research interests lie at the intersection of **Computational Social Science** and **NLP**. Specifically, I am interested in harnessing language and its situated nature to understand human social behaviour and affect positive societal change. I am also keen to explore the risks and harms introduced by NLP models and pipelines, and how to establish their ethical integrity through responsible AI practices.
+My research interests lie at the intersection of computational social science and natural language processing. During my doctorate, I aim to contribute to the development of socially responsible AI technologies that actively contribute to bridging social divides and promoting the common good. To this end, I aim to (1) study human social behaviour as exhibited through language, (2) build NLP technologies that cater for marginalised populations, and (3) apply them to steer communities towards improving their mental health and mitigate conflicts.
 
 I have previously graduated with a master’s in AI from Stockholm University, where I worked with a Ph.D student from Spotify to investigate how podcast comprehension can be improved using a pipeline combining topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
