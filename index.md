@@ -12,7 +12,7 @@ My research interests encompass the fields of computational social science and n
   <li>How can we apply such technologies to steer communities towards improving their well-being and mitigate conflicts?</li>
 </ol>
 
-I have graduated with a master’s in AI from Stockholm University, where I worked with a Ph.D student from Spotify to investigate how podcast comprehension can be improved using a pipeline combining topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
+I have previously graduated with a master’s in AI from Stockholm University, where I worked with a Ph.D student from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
 Before my move to Stockholm, I also completed my bachelor’s in AI at the University of Malta, where I worked with [Dr. Charlie Abela](https://www.um.edu.mt/profile/charlieabela) to explore the relationship between users’ Big Five personality traits and the social connections they create within a real-world Twitter network.
 
