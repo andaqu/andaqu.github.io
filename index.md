@@ -4,7 +4,7 @@ layout: homepage
 
 Hello! I am an incoming Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I shall be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
 
-<span style="color:orange;">My research goal is to better understand human social behaviour and build responsible language technologies that seek to incorporate social science concepts, bridge divides between groups, and improve overall well-being.</span>
+<span style="color:orange;">My research goal is to (1) better understand human social behaviour, and, (2) build responsible language technologies that seek to incorporate social science concepts, bridge divides between societal groups, and improve overall well-being.</span>
 
 I have previously graduated with a master’s in AI from Stockholm University, where I worked with a Ph.D student from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
