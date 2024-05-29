@@ -17,7 +17,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
         <img style="max-width: 100px; padding: 10px;" src="assets/img/pitt.png">
     </div>
     <div>
-        <p><strong>To start Sep. 2024</strong>, Department of Informatics and Networked Systems, <strong>University of Pittsburgh</strong>,</p>
+        <p><strong>To start Aug. 2024</strong>, Department of Informatics and Networked Systems, <strong>University of Pittsburgh</strong>,</p>
         <p>Doctor of Philosophy in Information Science (Expected).</p>
     </div>
 </div>
