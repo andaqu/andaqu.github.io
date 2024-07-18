@@ -28,6 +28,9 @@
       {% if link.poster %} 
       <a href="{{ link.poster }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Poster</a>
       {% endif %}
+      {% if link.slides %} 
+      <a href="{{ link.slides }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Slides</a>
+      {% endif %}
       {% if link.page %} 
       <a href="{{ link.page }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
       {% endif %}
