@@ -50,7 +50,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
         <img style="max-width: 100px; padding: 10px;" src="assets/img/loqus.png">
     </div>
     <div>
-        <p><strong>Sep. 2023 - Present</strong>, Backend Team, <strong>Loqus Business Intelligence</strong>,</p>
+        <p><strong>Sep. 2023 - Jul. 2024</strong>, Backend Team, <strong>Loqus Business Intelligence</strong>,</p>
         <p>Artificial Intelligence Engineer.</p>
     </div>
 </div>
