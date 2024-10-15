@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-Hello! I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I shall be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
+Hello! I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/) I am grateful to be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
 
 My research goal is to study how socially-aware natural language processing systems can provide a better understanding of human social behaviour and bridge societal divides within digital spaces. I am also interested in assessing the ethical integrity of such technologies to ensure their safety and responsible use.
 
