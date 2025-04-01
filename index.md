@@ -10,6 +10,11 @@ I have previously graduated with a master’s in AI from Stockholm University, w
 
 Before my move to Stockholm, I also completed my bachelor’s in AI at the University of Malta, where I worked with [Dr. Charlie Abela](https://www.um.edu.mt/profile/charlieabela) to explore the relationship between users’ psychological traits and the social connections they create on Twitter.
 
+## Updates
+
+* [March 2025] Excited to present my first Ph.D. project as a poster at the [Johns Hopkins Data Science and AI Institute Spring 2025 Symposium](https://ai.jhu.edu/event/spring-2025-symposium/)!
+* [March 2025] Looking forward to participate at the [Summer Institute of Computational Social Science at CMU](https://sicss.io/2025/cmu/)!
+
 ## Education
 
 <div style="overflow: auto;">
