@@ -6,7 +6,7 @@ Hello! I am a Ph.D. student at the [School of Computing and Information](https:/
 
 My research goal is to study how socially-aware natural language processing systems can provide a better understanding of human social behaviour and bridge societal divides within digital spaces. I am also interested in assessing the ethical integrity of such technologies to ensure their safety and responsible use.
 
-I have previously graduated with a master’s in AI from Stockholm University, where I worked with a Ph.D. student from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
+I have previously graduated with a master’s in AI from Stockholm University, where I worked with a machine learning engineer from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
 Before my move to Stockholm, I also completed my bachelor’s in AI at the University of Malta, where I worked with [Dr. Charlie Abela](https://www.um.edu.mt/profile/charlieabela) to explore the relationship between users’ psychological traits and the social connections they create on Twitter.
 
