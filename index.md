@@ -4,7 +4,7 @@ layout: homepage
 
 Hello! I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I am grateful to be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
 
-My research goal is to study how socially-aware natural language processing systems can provide a better understanding of human social behaviour and bridge societal divides within digital spaces. I am also interested in assessing the ethical integrity of such technologies to ensure their safety and responsible use.
+My research aims to explore how socially-aware natural language processing systems can improve our understanding of human social behaviour and effectively accommodate diverse individual preferences and needs. I am also interested in assessing the ethical integrity of such technologies to ensure their safety and responsible use.
 
 I have previously graduated with a master’s in AI from Stockholm University, where I worked with a machine learning engineer from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
