@@ -97,7 +97,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 ## A bit about me
 
-🏝️ I'm from a very small island in the Mediterranean called Malta. It's a beautiful country, you should come visit! [If you're considering a trip, my friend's website has some great information.](https://www.todoinmalta.com/)
+🏝️ I'm from a very small island in the Mediterranean called Malta. It's a beautiful country, you should come visit!
 
 🕹️ My all-time favourite video game has to be the original Deus Ex. One of the best stories ever told in a game. I served as a beta tester for an overhaul mod called [Deus Ex: Revision](https://store.steampowered.com/app/397550/Deus_Ex_Revision/), which I highly recommend.
 
