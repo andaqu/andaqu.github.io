@@ -8,7 +8,7 @@ My research aims to explore how socially-aware natural language processing syste
 
 I have previously graduated with a master’s in AI from Stockholm University, where I worked with a machine learning engineer from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
 
-Before my move to Stockholm, I also completed my bachelor’s in AI at the University of Malta, where I worked with [Dr. Charlie Abela](https://www.um.edu.mt/profile/charlieabela) to explore the relationship between users’ psychological traits and the social connections they create on Twitter.
+Before my move to Stockholm, I also completed my bachelor’s in AI at the University of Malta, where I worked with [Prof. Charlie Abela](https://www.um.edu.mt/profile/charlieabela) to explore the relationship between users’ psychological traits and the social connections they create on Twitter.
 
 ## Updates
 
