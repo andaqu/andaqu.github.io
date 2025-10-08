@@ -13,7 +13,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 ## Updates
 
 * [May 2025] [Collaborated at SICSS-CMU](https://sicss.io/2025/cmu/people#:~:text=less%20impactful%20efforts.-,Andrew%20Aquilina,-Andrew%20Aquilina%20is) with an interdisciplinary team to analyse how political perceptions of AI shifted before and after ChatGPT's launch.
-* [March 2025] Presented my first Ph.D. project as a poster at the [Johns Hopkins Data Science and AI Institute Spring 2025 Symposium](https://ai.jhu.edu/event/spring-2025-symposium/)!
+* [March 2025] Presented my first Ph.D. project as a poster at the <span class="poster-link-wrapper">[Johns Hopkins Data Science and AI Institute Spring 2025 Symposium](https://ai.jhu.edu/event/spring-2025-symposium/)<span class="poster-popup"><img src="assets/img/poster.jpg" alt="Symposium Poster"></span></span>!
 
 ## Education
 

@@ -2,3 +2,56 @@
 ---
 
 @import "minimal-light-no-dark-mode";
+
+/* Poster popup styles */
+.poster-link-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.poster-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  padding: 5px;
+}
+
+.poster-popup img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.poster-link-wrapper:hover .poster-popup {
+  display: block;
+}
+
+/* Add arrow pointing up to the link */
+.poster-popup::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-bottom-color: #ddd;
+}
+
+.poster-popup::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 8px solid transparent;
+  border-bottom-color: white;
+}
