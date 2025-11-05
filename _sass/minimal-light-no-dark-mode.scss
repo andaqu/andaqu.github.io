@@ -82,7 +82,50 @@
   background-color:#000}
 
 body {
-  font-size: 17px
+  font-size: 17px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  isolation: isolate;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  -webkit-filter: none !important;
+  will-change: auto;
+}
+
+video {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  -webkit-filter: none !important;
+}
+
+video.background-video {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  -webkit-filter: none !important;
 }
 
 email {
@@ -217,6 +260,10 @@ a:hover small {
 .wrapper {
   width:960px;
   margin:0 auto;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
 }
 
 blockquote {
@@ -266,11 +313,12 @@ img {
 
 header {
   width:232px;
-  float:left;
-  position:fixed;
+  position: fixed;
+  left: calc(50% - 480px);
   -webkit-font-smoothing:subpixel-antialiased;
-  padding-top:4.0em;
-  text-align:center
+  padding: 4.0em 20px 20px 20px;
+  text-align:center;
+  min-height: 100vh;
 }
 
 
@@ -336,9 +384,9 @@ header ul a strong {
 
 section {
   width:650px;
-  float:right;
-  padding-top:4.0em;
-  padding-bottom:50px;
+  margin-left: 252px;
+  padding: 6.0em 30px 50px 30px;
+  min-height: 100vh;
 }
 
 small {
@@ -359,6 +407,7 @@ footer {
   bottom:30px;
   -webkit-font-smoothing:subpixel-antialiased;
   text-align:center;
+  display: none;
 }
 
 @media print, screen and (max-width: 960px) {
@@ -380,13 +429,14 @@ footer {
   }
 
   header {
-    padding-right:320px;
+    padding: 5px 20px;
+    min-height: auto;
   }
 
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
-    padding:20px 0;
+    padding:20px;
     margin:0 0 20px;
   }
 
@@ -402,9 +452,14 @@ footer {
 
 
    .image.avatar img {
-        width: 117px;
+        width: 200px;
         padding:20px;
       }
+
+  header h1 {
+    margin-top: 20px;
+  }
+
   #head1o2 {
     visibility: hidden;
   }
@@ -426,7 +481,8 @@ footer {
   align-items: center;}
 
   header {
-    padding:0;
+    padding: 5px 20px;
+    min-height: auto;
   }
 
   header ul, header p.view {
@@ -457,9 +513,14 @@ footer {
   }
 
   .image.avatar img {
-      width: 95px;
-      padding:20px;
+      width: 170px;
+      padding:10px;
   }
+
+  header h1 {
+    margin-top: 20px;
+  }
+
   #head1o2 {
     visibility: hidden;
   }

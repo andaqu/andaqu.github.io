@@ -30,8 +30,48 @@
     <link rel="stylesheet" href="./assets/css/publications-no-dark-mode.css">
     {% endif %}
 
+    <style>
+      /* Prevent dark mode reader plugins from affecting videos */
+      video,
+      video.background-video,
+      .background-video,
+      .video-container video,
+      body video,
+      html video {
+        filter: none !important;
+        -webkit-filter: none !important;
+        -moz-filter: none !important;
+        -ms-filter: none !important;
+        mix-blend-mode: normal !important;
+        isolation: isolate !important;
+      }
+      .video-container {
+        filter: none !important;
+        -webkit-filter: none !important;
+        -moz-filter: none !important;
+        -ms-filter: none !important;
+        mix-blend-mode: normal !important;
+        isolation: isolate !important;
+      }
+      /* Prevent body background from blocking video */
+      body {
+        background-color: transparent !important;
+        background: transparent !important;
+      }
+      html {
+        background-color: transparent !important;
+        background: transparent !important;
+      }
+    </style>
+
   </head>
-  <body>
+  <body style="background-color: transparent !important; background: transparent !important;">
+    <div class="video-container">
+      <video class="background-video" autoplay muted loop playsinline style="filter: none !important; -webkit-filter: none !important; mix-blend-mode: normal !important;">
+        <source src="./assets/video/krumzi-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
     <div class="wrapper">
       <header>
 
@@ -114,6 +154,96 @@
       gtag('js', new Date());
 
       gtag('config', 'G-FFR3GRL9LX');
+    </script>
+
+    <!-- Dark Mode Video Switcher -->
+    <script>
+      (function() {
+        const video = document.querySelector('.background-video source');
+        const videoElement = document.querySelector('.background-video');
+        const normalVideo = './assets/video/krumzi-video.mp4';
+        const darkVideo = './assets/video/krumzi-video (2).mp4';
+        let switchTimeout;
+        let lastMode = null;
+        
+        function isDarkMode() {
+          // Check if dark mode plugin has changed background colors
+          const bodyBg = window.getComputedStyle(document.body).backgroundColor;
+          const htmlBg = window.getComputedStyle(document.documentElement).backgroundColor;
+          const wrapperBg = window.getComputedStyle(document.querySelector('.wrapper') || document.body).backgroundColor;
+          
+          // Convert rgb/rgba to check darkness
+          const isDark = (color) => {
+            // Check if color is transparent or rgba with 0 alpha
+            if (color === 'transparent' || color === 'rgba(0, 0, 0, 0)' || !color) {
+              return false; // Transparent is not dark mode
+            }
+            
+            const rgb = color.match(/\d+/g);
+            if (!rgb || rgb.length < 3) return false;
+            
+            // If alpha channel exists and is very low, consider it transparent
+            if (rgb.length === 4 && parseInt(rgb[3]) < 0.1) {
+              return false;
+            }
+            
+            const brightness = (parseInt(rgb[0]) * 299 + parseInt(rgb[1]) * 587 + parseInt(rgb[2]) * 114) / 1000;
+            return brightness < 50; // Dark if brightness is less than 50
+          };
+          
+          // Only return true if we actually detect a dark background (not transparent)
+          return isDark(bodyBg) || isDark(htmlBg) || isDark(wrapperBg);
+        }
+        
+        function switchVideo() {
+          // Debounce to avoid excessive switching
+          clearTimeout(switchTimeout);
+          switchTimeout = setTimeout(() => {
+            const shouldUseDarkVideo = isDarkMode();
+            
+            // Only switch if mode actually changed
+            if (lastMode === shouldUseDarkVideo) return;
+            lastMode = shouldUseDarkVideo;
+            
+            const currentSrc = video.getAttribute('src');
+            const targetSrc = shouldUseDarkVideo ? darkVideo : normalVideo;
+            
+            if (currentSrc !== targetSrc) {
+              // Save current playback time for smoother transition
+              const currentTime = videoElement.currentTime;
+              
+              video.setAttribute('src', targetSrc);
+              videoElement.load();
+              
+              // Try to resume from same position
+              videoElement.addEventListener('loadedmetadata', function onLoaded() {
+                videoElement.currentTime = currentTime;
+                videoElement.play().catch(e => console.log('Video autoplay prevented:', e));
+                videoElement.removeEventListener('loadedmetadata', onLoaded);
+              });
+            }
+          }, 50); // 50ms debounce for fast but smooth switching
+        }
+        
+        // Initial check immediately
+        switchVideo();
+        
+        // Listen for system dark mode changes
+        if (window.matchMedia) {
+          window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', switchVideo);
+        }
+        
+        // Watch for DOM changes (dark mode plugins modifying styles)
+        const observer = new MutationObserver(switchVideo);
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ['style', 'class'],
+          subtree: true
+        });
+        
+        // Fast periodic check for injected styles
+        setInterval(switchVideo, 200);
+      })();
     </script>
 
   </body>
