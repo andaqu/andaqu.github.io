@@ -82,7 +82,22 @@
   background-color:#000}
 
 body {
-  font-size: 17px
+  font-size: 17px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
 }
 
 email {
@@ -217,6 +232,9 @@ a:hover small {
 .wrapper {
   width:960px;
   margin:0 auto;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
 
 blockquote {
@@ -270,7 +288,9 @@ header {
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
   padding-top:4.0em;
-  text-align:center
+  text-align:center;
+  background-color: white;
+  z-index: 1;
 }
 
 
@@ -339,6 +359,8 @@ section {
   float:right;
   padding-top:4.0em;
   padding-bottom:50px;
+  background-color: white;
+  z-index: 1;
 }
 
 small {
@@ -359,6 +381,8 @@ footer {
   bottom:30px;
   -webkit-font-smoothing:subpixel-antialiased;
   text-align:center;
+  background-color: white;
+  z-index: 1;
 }
 
 @media print, screen and (max-width: 960px) {
