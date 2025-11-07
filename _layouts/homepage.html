@@ -65,12 +65,60 @@
         background-color: transparent !important;
         background: transparent !important;
       }
+      /* Hide iOS play button overlay - NEVER show play controls */
+      video::-webkit-media-controls,
+      video::-webkit-media-controls-enclosure,
+      video::-webkit-media-controls-panel,
+      video::-webkit-media-controls-play-button,
+      video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        -webkit-appearance: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+      video.background-video::-webkit-media-controls,
+      video.background-video::-webkit-media-controls-enclosure,
+      video.background-video::-webkit-media-controls-panel,
+      video.background-video::-webkit-media-controls-play-button,
+      video.background-video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        -webkit-appearance: none !important;
+        opacity: 0 !important;
+        visibility: hidden !important;
+        pointer-events: none !important;
+      }
+      /* Hide all video controls on all browsers */
+      video {
+        pointer-events: none !important;
+      }
+      video.background-video {
+        pointer-events: none !important;
+      }
+      /* Additional iOS Safari specific hiding */
+      @supports (-webkit-touch-callout: none) {
+        video::-webkit-media-controls {
+          display: none !important;
+        }
+        video::-webkit-media-controls-enclosure {
+          display: none !important;
+        }
+        video::-webkit-media-controls-panel {
+          display: none !important;
+        }
+        video::-webkit-media-controls-play-button {
+          display: none !important;
+        }
+        video::-webkit-media-controls-start-playback-button {
+          display: none !important;
+        }
+      }
     </style>
 
   </head>
   <body style="background-color: transparent !important; background: transparent !important;">
     <div class="video-container">
-      <video class="background-video" autoplay muted loop playsinline style="filter: none !important; -webkit-filter: none !important; mix-blend-mode: normal !important;">
+      <video class="background-video" autoplay muted loop playsinline webkit-playsinline controls="false" disablePictureInPicture style="filter: none !important; -webkit-filter: none !important; mix-blend-mode: normal !important; pointer-events: none !important;">
         <source src="./assets/video/krumzi-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
@@ -157,6 +205,73 @@
       gtag('js', new Date());
 
       gtag('config', 'G-FFR3GRL9LX');
+    </script>
+
+    <!-- Force video playback and hide play button overlay -->
+    <script>
+      (function() {
+        const videoElement = document.querySelector('.background-video');
+        if (videoElement) {
+          // Ensure video plays and never shows controls
+          videoElement.controls = false;
+          videoElement.setAttribute('controls', 'false');
+          videoElement.removeAttribute('controls');
+          
+          // Force play the video
+          const playVideo = () => {
+            if (videoElement.paused) {
+              videoElement.play().catch(() => {
+                // If autoplay fails, try again after user interaction
+                document.addEventListener('touchstart', () => {
+                  videoElement.play().catch(() => {});
+                }, { once: true });
+                document.addEventListener('click', () => {
+                  videoElement.play().catch(() => {});
+                }, { once: true });
+              });
+            }
+          };
+          
+          // Try to play immediately
+          playVideo();
+          
+          // Ensure video plays when loaded
+          videoElement.addEventListener('loadedmetadata', playVideo);
+          videoElement.addEventListener('loadeddata', playVideo);
+          videoElement.addEventListener('canplay', playVideo);
+          
+          // If video pauses, try to play again (but don't show controls)
+          videoElement.addEventListener('pause', () => {
+            if (!document.hidden) {
+              videoElement.play().catch(() => {});
+            }
+          });
+          
+          // Hide any play button overlays that might appear
+          const hidePlayButton = () => {
+            const playButtons = videoElement.querySelectorAll('*');
+            playButtons.forEach(btn => {
+              if (btn.style && (btn.style.display !== 'none')) {
+                const computedStyle = window.getComputedStyle(btn);
+                if (computedStyle.cursor === 'pointer' || btn.classList.contains('play')) {
+                  btn.style.display = 'none';
+                  btn.style.visibility = 'hidden';
+                  btn.style.opacity = '0';
+                  btn.style.pointerEvents = 'none';
+                }
+              }
+            });
+          };
+          
+          // Continuously check for play buttons (especially on iOS)
+          setInterval(hidePlayButton, 100);
+          
+          // Also hide on various events
+          ['load', 'play', 'playing', 'pause'].forEach(event => {
+            videoElement.addEventListener(event, hidePlayButton);
+          });
+        }
+      })();
     </script>
 
     <!-- Dark Mode Video Switcher -->

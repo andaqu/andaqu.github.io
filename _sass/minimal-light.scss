@@ -136,12 +136,50 @@ video {
   filter: none !important;
   mix-blend-mode: normal !important;
   -webkit-filter: none !important;
+  pointer-events: none !important;
 }
 
 video.background-video {
   filter: none !important;
   mix-blend-mode: normal !important;
   -webkit-filter: none !important;
+  pointer-events: none !important;
+}
+
+/* Hide iOS play button overlay - NEVER show play controls */
+video::-webkit-media-controls,
+video::-webkit-media-controls-enclosure,
+video::-webkit-media-controls-panel,
+video::-webkit-media-controls-play-button,
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+video.background-video::-webkit-media-controls,
+video.background-video::-webkit-media-controls-enclosure,
+video.background-video::-webkit-media-controls-panel,
+video.background-video::-webkit-media-controls-play-button,
+video.background-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Additional iOS Safari specific hiding */
+@supports (-webkit-touch-callout: none) {
+  video::-webkit-media-controls,
+  video::-webkit-media-controls-enclosure,
+  video::-webkit-media-controls-panel,
+  video::-webkit-media-controls-play-button,
+  video::-webkit-media-controls-start-playback-button {
+    display: none !important;
+  }
 }
 
 email {
