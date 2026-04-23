@@ -1,5 +1,12 @@
 main:
 
+  - title: "Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"
+    authors: Michelle Star, <strong>Andrew Aquilina</strong>, Yu-Ru Lin
+    conference_short: ICWSM SocialLLM
+    conference: SocialLLM Workshop at ICWSM 2026
+    pdf: https://arxiv.org/pdf/2604.17079.pdf
+    image: ./assets/img/socialllm.png
+
   - title: Predicting links in a social network based on recognised personalities
     authors: <strong>Andrew Aquilina</strong>, Charlie Abela
     conference_short: ACM/SIGAPP
