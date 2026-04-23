@@ -12,6 +12,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 ## Updates
 
+* [April 2026] Excited to share that our workshop paper, ["Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"](https://arxiv.org/abs/2604.17079), will appear at the SocialLLM Workshop at ICWSM 2026. 
 * [May 2025] [Collaborated at SICSS-CMU](https://sicss.io/2025/cmu/people#:~:text=less%20impactful%20efforts.-,Andrew%20Aquilina,-Andrew%20Aquilina%20is) with an interdisciplinary team to analyse how political perceptions of AI shifted before and after ChatGPT's launch.
 * [March 2025] Presented my first Ph.D. project as a poster at the [Johns Hopkins Data Science and AI Institute Spring 2025 Symposium](assets/img/poster.jpg)!
 
@@ -101,7 +102,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 🕹️ My all-time favourite video game has to be the original Deus Ex. One of the best stories ever told in a game. I served as a beta tester for an overhaul mod called [Deus Ex: Revision](https://store.steampowered.com/app/397550/Deus_Ex_Revision/), which I highly recommend.
 
-👁️ I have mild red-green colour blindness. Go figure.
+👁️ I have red-green colour blindness.
 
 🐧 I used to have a blog about Club Penguin when I was 12. I had even convinced my mum to buy me a .com domain for it! It was a simpler time.
 
