@@ -12,7 +12,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 ## Updates
 
-* [April 2026] Excited to share that our workshop paper, ["Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"](https://arxiv.org/abs/2604.17079), will appear at the SocialLLM Workshop at ICWSM 2026. 
+* [April 2026] Excited to share that our workshop paper, ["Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"](https://arxiv.org/abs/2604.17079), has been selected for an oral presentation at the SocialLLM Workshop at ICWSM 2026! 🎉 See you in LA!
 * [May 2025] [Collaborated at SICSS-CMU](https://sicss.io/2025/cmu/people#:~:text=less%20impactful%20efforts.-,Andrew%20Aquilina,-Andrew%20Aquilina%20is) with an interdisciplinary team to analyse how political perceptions of AI shifted before and after ChatGPT's launch.
 * [March 2025] Presented my first Ph.D. project as a poster at the [Johns Hopkins Data Science and AI Institute Spring 2025 Symposium](assets/img/poster.jpg)!
 
