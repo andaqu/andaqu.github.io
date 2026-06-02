@@ -1,5 +1,12 @@
 main:
 
+  - title: "Lost in Delusion: Examining LLM Safety Under User Delusions and Distress"
+    authors: <strong>Andrew Aquilina</strong>, Chetna Nihalani, Vasudha Varadarajan, Nathan S. Fishbein, Yu-Ru Lin, Maarten Sap
+    conference_short: arXiv
+    conference: arXiv preprint
+    pdf: https://arxiv.org/pdf/2606.00975.pdf
+    image: ./assets/img/delusion_paper.png
+
   - title: "Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"
     authors: Michelle Star*, <strong>Andrew Aquilina*</strong>, Yu-Ru Lin
     conference_short: ICWSM SocialLLM
