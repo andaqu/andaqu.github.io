@@ -4,6 +4,7 @@ main:
     authors: <strong>Andrew Aquilina</strong>, Chetna Nihalani, Vasudha Varadarajan, Nathan S. Fishbein, Yu-Ru Lin, Maarten Sap
     conference_short: arXiv
     conference: arXiv preprint
+    link: https://arxiv.org/abs/2606.00975
     pdf: https://arxiv.org/pdf/2606.00975.pdf
     image: ./assets/img/delusion_paper.png
 
@@ -11,6 +12,7 @@ main:
     authors: Michelle Star*, <strong>Andrew Aquilina*</strong>, Yu-Ru Lin
     conference_short: ICWSM SocialLLM
     conference: SocialLLM Workshop at ICWSM 2026
+    link: https://arxiv.org/abs/2604.17079
     pdf: https://arxiv.org/pdf/2604.17079.pdf
     video: "https://drive.google.com/file/d/1KGhpKkvg00mSiRc-yw4lhbO_0MkWMiuB/view?usp=sharing"
     oral: true
@@ -20,7 +22,8 @@ main:
     authors: <strong>Andrew Aquilina</strong>, Charlie Abela
     conference_short: ACM/SIGAPP
     conference: Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing
-    pdf: https://dl.acm.org/doi/10.1145/3477314.3506995
+    link: https://dl.acm.org/doi/10.1145/3477314.3506995
+    pdf: https://dl.acm.org/doi/pdf/10.1145/3477314.3506995
     code: https://github.com/andaqu/palp-boost
     poster: ./assets/files/poster.pdf
     slides: ./assets/files/slides.pdf
@@ -30,6 +33,7 @@ main:
   #   authors: <strong>Andrew Aquilina</strong>, Sean Diacono, Panagiotis Papapetrou, Maria Movin
   #   conference_short: arXiv
   #   conference: arXiv preprint
+  #   link: https://arxiv.org/abs/2307.13394
   #   pdf: https://arxiv.org/pdf/2307.13394.pdf
   #   code: https://github.com/seandiacono/Spotify-Topic-Segmentation
   #   image: ./assets/img/podcasts.png

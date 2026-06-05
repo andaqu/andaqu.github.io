@@ -14,7 +14,14 @@
     {% endif %}
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="{{ link.pdf }}">{{ link.title }}</a></div>
+      {% if link.link %}
+        {% assign title_url = link.link %}
+      {% elsif link.pdf contains 'arxiv.org/pdf/' %}
+        {% assign title_url = link.pdf | replace: '/pdf/', '/abs/' | replace: '.pdf', '' %}
+      {% elsif link.pdf %}
+        {% assign title_url = link.pdf %}
+      {% endif %}
+      <div class="title">{% if title_url %}<a href="{{ title_url }}">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em>{% if link.oral %} <span class="oral-badge">Oral</span>{% endif %}
       </div>
