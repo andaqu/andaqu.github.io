@@ -6,6 +6,7 @@ layout: homepage
   html { scroll-behavior: smooth; }
   section { padding-top: 1.6em !important; }
   .site-nav {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,12 +109,103 @@ layout: homepage
   .nowplaying .np-text { margin: 0; line-height: 1.45; }
   .nowplaying .np-song { font-weight: 600; }
   .nowplaying .np-meta { opacity: 0.55; font-size: 0.9em; }
+
+  /* Light / dark mode toggle (sun rises, moon sets) ------------------ */
+  .theme-toggle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 4px 5px;
+    line-height: 0;
+    cursor: pointer;
+    color: #043361;
+    border-radius: 8px;
+    transition: color .7s ease, background-color .2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .theme-toggle:hover { background-color: rgba(4, 51, 97, .07); }
+  .theme-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+  .tt-svg { display: block; overflow: visible; }
+  /* Celestial bodies glide vertically; the clip mask hides them below
+     the horizon, so the sun reads as a dome and only "sets" out of view. */
+  .tt-sun,
+  .tt-moon {
+    transition: transform .85s cubic-bezier(.34, .14, .2, 1);
+    will-change: transform;
+  }
+  .tt-rays { transition: opacity .5s ease; }
+  .tt-moon { transform: translateY(34px); }      /* light mode: moon hidden below */
+  html.dark .tt-sun { transform: translateY(30px); }   /* dark mode: sun has set */
+  html.dark .tt-moon { transform: translateY(0); }     /* dark mode: moon has risen */
+  html.dark .tt-rays { opacity: 0; }
+  html.dark .theme-toggle { color: #e6edf5; }
+  html.dark .theme-toggle:hover { background-color: rgba(230, 237, 245, .12); }
+
+  /* Dark theme colours + smooth fade -------------------------------- */
+  /* The content panel ships as a near-white card; darken it so light
+     text is readable (otherwise dark mode just looks "still white"). */
+  html.dark .wrapper { background-color: rgba(13, 18, 28, .82); }
+  html.dark body,
+  html.dark autocolor,
+  html.dark position,
+  html.dark email { color: #c7d2e0; }
+  html.dark .site-nav { border-bottom-color: rgba(255, 255, 255, .18); }
+  html.dark .site-nav a { color: #e6edf5; }
+  html.dark h1, html.dark h2, html.dark h3,
+  html.dark h4, html.dark h5, html.dark h6 { color: #9ec5ff; }
+  html.dark strong { color: #f0f0f0; }
+  html.dark a { color: #6cb6ff; }
+  html.dark a:hover { color: #9ed0ff; }
+  html.dark hr { background: rgba(255, 255, 255, .14); }
+  html.dark blockquote { border-left-color: rgba(255, 255, 255, .2); }
+  html.dark pre,
+  html.dark code { color: #d7deea; }
+  html.dark pre { background: rgba(255, 255, 255, .06); border-color: rgba(255, 255, 255, .14); }
+  html.dark th, html.dark td { border-bottom-color: rgba(255, 255, 255, .14); }
+  html.dark th, html.dark dt { color: #e6edf5; }
+  html.dark .social-icons a { color: #9ec5ff !important; }
+
+  .wrapper,
+  body, autocolor, position, email,
+  .site-nav, .site-nav a,
+  h1, h2, h3, h4, h5, h6, strong, a, p, li, td {
+    transition: color .7s ease, border-color .7s ease, background-color .7s ease;
+  }
 </style>
 
 <nav class="site-nav">
   <a href="#" class="nav-link" id="nav-about" data-view="home">About</a>
   <span class="nav-sep">|</span>
   <a href="#" class="nav-link" id="nav-blog" data-view="blog">Blog</a>
+  <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark mode" aria-pressed="false">
+    <svg class="tt-svg" viewBox="0 0 72 44" width="56" height="34" aria-hidden="true" focusable="false">
+      <defs>
+        <clipPath id="tt-horizon-clip"><rect x="-6" y="0" width="84" height="30"/></clipPath>
+      </defs>
+      <g clip-path="url(#tt-horizon-clip)">
+        <g class="tt-sun">
+          <circle cx="36" cy="30" r="9" fill="currentColor"/>
+          <g class="tt-rays" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+            <line x1="36" y1="11" x2="36" y2="3"/>
+            <line x1="27" y1="13" x2="24" y2="6"/>
+            <line x1="45" y1="13" x2="48" y2="6"/>
+            <line x1="20" y1="18" x2="14" y2="12"/>
+            <line x1="52" y1="18" x2="58" y2="12"/>
+            <line x1="16" y1="26" x2="9"  y2="23"/>
+            <line x1="56" y1="26" x2="63" y2="23"/>
+          </g>
+        </g>
+        <g class="tt-moon">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor" transform="translate(21.6 4.8) scale(1.2)"/>
+        </g>
+      </g>
+      <line class="tt-horizon" x1="4" y1="30" x2="68" y2="30" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    </svg>
+  </button>
 </nav>
 
 <div id="home-view" class="view" markdown="1">
@@ -254,6 +346,21 @@ Outside of research, I'm into [music](#what-am-i-listening-to), cooking, explori
 </div>
 
 <script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+
+    function sync() { btn.setAttribute('aria-pressed', root.classList.contains('dark') ? 'true' : 'false'); }
+    sync();
+
+    btn.addEventListener('click', function () {
+      var dark = root.classList.toggle('dark');
+      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+      sync();
+    });
+  })();
+
   (function () {
     var aboutBtn = document.getElementById('nav-about');
     var blogBtn  = document.getElementById('nav-blog');
