@@ -2,6 +2,85 @@
 layout: homepage
 ---
 
+<style>
+  html { scroll-behavior: smooth; }
+  section { padding-top: 1.6em !important; }
+  .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin: 0 0 28px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .site-nav a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 4px;
+    border-bottom: 2px solid transparent;
+    transition: border-color .2s ease;
+  }
+  .site-nav a:hover { border-bottom-color: currentColor; }
+  .site-nav a.active { border-bottom-color: currentColor; }
+  .site-nav .nav-sep {
+    padding: 0 10px;
+    opacity: 0.35;
+    font-weight: 400;
+    user-select: none;
+    pointer-events: none;
+  }
+  .view { transition: opacity .3s ease; }
+  #blog-view { display: none; opacity: 0; }
+  .blog-intro { margin-bottom: 32px; }
+  .blog-article { margin-bottom: 28px; }
+  .blog-article .article-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 2px;
+  }
+  .blog-article .article-date {
+    display: block;
+    font-size: 0.85rem;
+    opacity: 0.65;
+    margin-bottom: 6px;
+  }
+  .blog-empty { opacity: 0.7; font-style: italic; }
+  .nowplaying {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 18px 0 4px;
+  }
+  .nowplaying .np-art {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: #ececec;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    line-height: 1;
+  }
+  .nowplaying .np-text { margin: 0; line-height: 1.45; }
+  .nowplaying .np-song { font-weight: 600; }
+  .nowplaying .np-meta { opacity: 0.55; font-size: 0.9em; }
+</style>
+
+<nav class="site-nav">
+  <a href="#" class="nav-link" id="nav-about" data-view="home">About</a>
+  <span class="nav-sep">|</span>
+  <a href="#" class="nav-link" id="nav-blog" data-view="blog">Blog</a>
+</nav>
+
+<div id="home-view" class="view" markdown="1">
+
 Hello! I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I am grateful to be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
 
 My research aims to explore how socially-aware natural language processing systems can improve our understanding of human social behaviour and effectively accommodate diverse individual preferences and needs. I am also interested in assessing the ethical integrity of such technologies to ensure their safety and responsible use.
@@ -48,7 +127,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
     </div>
 </div>
 
-
+<!--
 ## Industry Experience
 
 <div style="overflow: auto;">
@@ -90,7 +169,7 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
         <p>Software Engineer Apprentice.</p>
     </div>
 </div>
-
+-->
 
 ## Papers
 
@@ -107,3 +186,96 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 🐧 I used to have a blog about Club Penguin when I was 12. I had even convinced my mum to buy me a .com domain for it! It was a simpler time.
 
 🍫 A hill I'd die on? Mint chocolate is humanity's greatest mistake.
+
+<div id="nowplaying" class="nowplaying">
+  <div id="np-art" class="np-art" role="img" aria-label="Album art">🎵</div>
+  <p class="np-text">Favourite song right now? <span id="np-song">…</span> <span class="np-meta">(from my Spotify)</span></p>
+</div>
+
+</div>
+
+<div id="blog-view" class="view">
+  <h2>Blog</h2>
+  <p class="blog-intro">
+    This is a space for my thoughts, research notes, and things I've been learning. Most importantly, it is a no AI zone - meaning I cannot use it to draft, write, or proofread for me. It is organic! 🌱
+  </p>
+  <div class="articles">
+    <p class="blog-empty">No articles yet — check back soon!</p>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var aboutBtn = document.getElementById('nav-about');
+    var blogBtn  = document.getElementById('nav-blog');
+    var homeView = document.getElementById('home-view');
+    var blogView = document.getElementById('blog-view');
+    var FADE_MS  = 300;
+
+    function setActive(link) {
+      [aboutBtn, blogBtn].forEach(function (l) { l.classList.remove('active'); });
+      if (link) link.classList.add('active');
+    }
+
+    function isBlogVisible() {
+      return blogView.style.display === 'block';
+    }
+
+    function fadeOut(el, cb) {
+      el.style.opacity = '0';
+      setTimeout(function () { el.style.display = 'none'; if (cb) cb(); }, FADE_MS);
+    }
+
+    function fadeIn(el) {
+      el.style.display = 'block';
+      el.style.opacity = '0';
+      void el.offsetWidth;
+      el.style.opacity = '1';
+    }
+
+    aboutBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (isBlogVisible()) {
+        setActive(aboutBtn);
+        fadeOut(blogView, function () { fadeIn(homeView); });
+      }
+    });
+
+    blogBtn.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (!isBlogVisible()) {
+        setActive(blogBtn);
+        fadeOut(homeView, function () { fadeIn(blogView); });
+      }
+    });
+  })();
+
+  (function () {
+    var wrap = document.getElementById('nowplaying');
+    var artEl = document.getElementById('np-art');
+    var songEl = document.getElementById('np-song');
+    if (!wrap || !artEl || !songEl) return;
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+
+    // Data is refreshed periodically by .github/workflows/nowplaying.yml,
+    // which writes assets/nowplaying.json from the Spotify API.
+    fetch('assets/nowplaying.json?cb=' + Date.now())
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) {
+        if (!d || !d.name) { wrap.style.display = 'none'; return; }
+        songEl.innerHTML = '<a class="np-song" href="' + escapeHtml(d.url || '#') +
+          '" target="_blank" rel="noopener">' + escapeHtml(d.name) + '</a> by ' +
+          escapeHtml(d.artist || '');
+        if (d.image) {
+          artEl.style.backgroundImage = 'url("' + d.image + '")';
+          artEl.textContent = '';
+        }
+      })
+      .catch(function () { wrap.style.display = 'none'; });
+  })();
+</script>
