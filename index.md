@@ -81,13 +81,11 @@ layout: homepage
 
 <div id="home-view" class="view" markdown="1">
 
-Hello! I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I am grateful to be working under the guidance of [Prof. Yu-Ru Lin](http://www.yurulin.com/) within the [Computational Social Dynamics Lab](https://picsolab.github.io/).
+Hey! 👋 I'm Andrew. I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I am grateful to be working under the guidance of [Yu-Ru Lin](http://www.yurulin.com/).
 
-My research aims to explore how socially-aware natural language processing systems can improve our understanding of human social behaviour and effectively accommodate diverse individual preferences and needs. I am also interested in assessing the ethical integrity of such technologies to ensure their safety and responsible use.
+My research examines how socially-aware NLP systems perceive and respond to human distress, and how they affect people's wellbeing. I pursue these questions by studying how distress is [interpreted differently across communities](https://osf.io/3wnyz/overview), how language models support users over [multi-turn conversations](https://arxiv.org/abs/2604.17079), and more recently, what makes chatbots unsafe in mental health contexts, such as [when users hold delusional beliefs](https://arxiv.org/abs/2606.00975).
 
-I have previously graduated with a master’s in AI from Stockholm University, where I worked with a machine learning engineer from Spotify to investigate how podcast comprehension can be improved using topic segmentation and text summarisation methods. I was advised by [Prof. Panagiotis Papapetrou](https://papapetrou.blogs.dsv.su.se/) and [Maria Movin](https://www.linkedin.com/in/mariamovin).
-
-Before my move to Stockholm, I also completed my bachelor’s in AI at the University of Malta, where I worked with [Prof. Charlie Abela](https://www.um.edu.mt/profile/charlieabela) to explore the relationship between users’ psychological traits and the social connections they create on Twitter.
+Outside of research, I'm into [music](#what-am-i-listening-to), cooking and trying new dishes, exploring new places.. plus anything creative (I've been trying out [pastel painting](assets/img/painting.jpg) lately!). I'm also from Malta, a small island in the Mediterranean. <a href="https://en.wikipedia.org/wiki/Malta"><img src="assets/img/flag.svg" alt="Maltese flag" style="height: 1em; vertical-align: -0.1em; border-radius: 2px;"></a>
 
 ## Updates
 
@@ -175,21 +173,11 @@ Before my move to Stockholm, I also completed my bachelor’s in AI at the Unive
 
 {% include_relative _includes/publications.md %}
 
-## A bit about me
-
-🏝️ I'm from a very small island in the Mediterranean called Malta. It's a beautiful country, you should come visit!
-
-🕹️ My all-time favourite video game has to be the original Deus Ex. One of the best stories ever told in a game. I served as a beta tester for an overhaul mod called [Deus Ex: Revision](https://store.steampowered.com/app/397550/Deus_Ex_Revision/), which I highly recommend.
-
-👁️ I have red-green colour blindness.
-
-🐧 I used to have a blog about Club Penguin when I was 12. I had even convinced my mum to buy me a .com domain for it! It was a simpler time.
-
-🍫 A hill I'd die on? Mint chocolate is humanity's greatest mistake.
+## Favourite song right now? {#what-am-i-listening-to}
 
 <div id="nowplaying" class="nowplaying">
   <div id="np-art" class="np-art" role="img" aria-label="Album art">🎵</div>
-  <p class="np-text">Favourite song right now? <span id="np-song">…</span> <span class="np-meta">(from my Spotify)</span></p>
+  <p class="np-text">Lately I've been listening to <span id="np-song">…</span> <span class="np-meta">(from my Spotify)</span></p>
 </div>
 
 </div>
