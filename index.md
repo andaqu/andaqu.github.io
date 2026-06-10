@@ -154,6 +154,7 @@ layout: homepage
   html.dark position,
   html.dark email { color: #c7d2e0; }
   html.dark .site-nav { border-bottom-color: rgba(255, 255, 255, .18); }
+  html.dark section { border-color: rgba(255, 255, 255, .14); }
   html.dark .site-nav a { color: #e6edf5; }
   html.dark h1, html.dark h2, html.dark h3,
   html.dark h4, html.dark h5, html.dark h6 { color: #9ec5ff; }
@@ -168,6 +169,19 @@ layout: homepage
   html.dark th, html.dark td { border-bottom-color: rgba(255, 255, 255, .14); }
   html.dark th, html.dark dt { color: #e6edf5; }
   html.dark .social-icons a { color: #9ec5ff !important; }
+  html.dark .social-icons a:hover {
+    background-color: rgba(255, 255, 255, .12) !important;
+    color: #c8e0ff !important;
+  }
+  html.dark .publications ol.bibliography li .links a.btn {
+    color: #e6edf5 !important;
+    border-color: rgba(255, 255, 255, .55) !important;
+  }
+  html.dark .publications ol.bibliography li .links a.btn:hover {
+    color: #9ed0ff !important;
+    border-color: #9ed0ff !important;
+    background-color: transparent;
+  }
 
   .wrapper,
   body, autocolor, position, email,
