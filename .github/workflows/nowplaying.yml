@@ -20,6 +20,8 @@ jobs:
     environment: github-pages
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -39,7 +41,18 @@ jobs:
           git add assets/nowplaying.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "chore: update now playing"
-            git push
+            exit 0
           fi
+          git commit -m "chore: update now playing"
+          # Retry on push races: another run may have advanced the branch.
+          # Keep our freshly generated file on conflict (it's the only file we touch).
+          for i in 1 2 3; do
+            if git push; then
+              echo "Pushed."
+              exit 0
+            fi
+            echo "Push rejected; rebasing onto latest and retrying ($i)..."
+            git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
+          done
+          echo "Failed to push after retries." >&2
+          exit 1
