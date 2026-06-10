@@ -148,31 +148,31 @@
         <br>
         <div class="social-icons">
         {% if site.google_scholar %}
-        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}">
+        <a style="margin: 0 5px 0 0" href="{{ site.google_scholar }}" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
         </a>  
         {% endif %}
 
         {% if site.cv_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}">
+        <a style="margin: 0 5px 0 0" href="{{ site.cv_link }}" target="_blank" rel="noopener noreferrer">
           <i class="ai ai-cv" style="font-size:1.3rem;"></i>
         </a>
         {% endif %}
 
         {% if site.github_link %}
-        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}">
+        <a style="margin: 0 5px 0 0" href="{{ site.github_link }}" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-github"></i>
         </a>
         {% endif %}
 
         {% if site.linkedin %}
-        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}">
+        <a style="margin: 0 5px 0 0" href="{{ site.linkedin }}" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-linkedin"></i>
         </a>
         {% endif %}
 
         {% if site.twitter %}
-        <a style="margin: 0 0 0 0" href="{{ site.twitter }}">
+        <a style="margin: 0 0 0 0" href="{{ site.twitter }}" target="_blank" rel="noopener noreferrer">
           <i class="fab fa-twitter"></i>
         </a>
         {% endif %}
@@ -359,6 +359,17 @@
         // Very fast periodic check
         setInterval(switchVideo, 50);
       })();
+    </script>
+
+    <script>
+      document.querySelectorAll('a[href]').forEach(function (a) {
+        var href = a.getAttribute('href');
+        if (!href || href === '#' || href.charAt(0) === '#') return;
+        a.target = '_blank';
+        if (!a.rel || a.rel.indexOf('noopener') === -1) {
+          a.rel = (a.rel ? a.rel + ' ' : '') + 'noopener noreferrer';
+        }
+      });
     </script>
 
   </body>

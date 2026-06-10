@@ -21,7 +21,7 @@
       {% elsif link.pdf %}
         {% assign title_url = link.pdf %}
       {% endif %}
-      <div class="title">{% if title_url %}<a href="{{ title_url }}">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
+      <div class="title">{% if title_url %}<a href="{{ title_url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>{% else %}{{ link.title }}{% endif %}</div>
       <div class="author">{{ link.authors }}</div>
       <div class="periodical"><em>{{ link.conference }}</em>{% if link.oral %} <span class="oral-badge">Oral</span>{% endif %}
       </div>
