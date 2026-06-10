@@ -15,6 +15,9 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # The Spotify secrets were added as *environment* secrets, so the job must
+    # opt into that environment to read them.
+    environment: github-pages
     steps:
       - uses: actions/checkout@v4
 
