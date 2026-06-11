@@ -122,12 +122,12 @@ layout: homepage
     padding: 4px 5px;
     line-height: 0;
     cursor: pointer;
-    color: #043361;
+    color: #39c;
     border-radius: 8px;
     transition: color .7s ease, background-color .2s ease;
     -webkit-tap-highlight-color: transparent;
   }
-  .theme-toggle:hover { background-color: rgba(4, 51, 97, .07); }
+  .theme-toggle:hover { background-color: rgba(51, 153, 204, .1); }
   .theme-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
   .tt-svg { display: block; overflow: visible; }
   /* Celestial bodies glide vertically; the clip mask hides them below
@@ -186,6 +186,7 @@ layout: homepage
   .wrapper,
   body, autocolor, position, email,
   .site-nav, .site-nav a,
+  section,
   h1, h2, h3, h4, h5, h6, strong, a, p, li, td {
     transition: color .7s ease, border-color .7s ease, background-color .7s ease;
   }
