@@ -329,7 +329,7 @@ Outside of research, I'm into [music](#what-am-i-listening-to), cooking, explori
 <div id="blog-view" class="view">
   <h2>Blog</h2>
   <p class="blog-intro">
-    This is a space for my thoughts, research notes, and things I've been learning. Most importantly, it is a no AI zone 🚫 - meaning I cannot use it to ideate, draft, write, or proofread for me. It is organic! 🌱
+    Everything here is written by me! No AI for ideating, drafting, or editing. 🤓
   </p>
   <div class="articles">
     {% assign posts = site.blog | sort: 'date' | reverse %}
