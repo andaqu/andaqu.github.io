@@ -182,6 +182,40 @@ layout: homepage
     border-color: #9ed0ff !important;
     background-color: transparent;
   }
+  .publications ol.bibliography li .title .title-pending {
+    position: relative;
+    color: #39c;
+    cursor: help;
+  }
+  .publications ol.bibliography li .title .title-pending::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 0;
+    bottom: calc(100% + 6px);
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #222;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+  }
+  .publications ol.bibliography li .title .title-pending:hover::after {
+    opacity: 1;
+  }
+  html.dark .publications ol.bibliography li .title .title-pending {
+    color: #6cb6ff;
+  }
+  html.dark .publications ol.bibliography li .title .title-pending:hover {
+    color: #9ed0ff;
+  }
+  html.dark .publications ol.bibliography li .title .title-pending::after {
+    background: #e6edf5;
+    color: #0d121c;
+  }
 
   .wrapper,
   body, autocolor, position, email,
@@ -313,7 +347,7 @@ Outside of research, I'm into [music](#what-am-i-listening-to), cooking, explori
 </div>
 -->
 
-## Papers
+## Selected Papers
 
 {% include_relative _includes/publications.md %}
 

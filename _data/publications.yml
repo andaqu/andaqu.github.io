@@ -1,5 +1,14 @@
 main:
 
+  - title: "Whose Assessment of Distress? Community Perspectives and LLM Alignment on Well-Being Posts"
+    authors: <strong>Andrew Aquilina</strong>, Xiang (Lorraine) Li, Yu-Ru Lin
+    conference_short: ICWSM
+    conference: ICWSM 2027
+    notes: "To appear!"
+    title_tooltip: "Pre-print coming soon!"
+    image: ./assets/img/distress_assessment.png
+    image_position: top
+
   - title: "Lost in Delusion: Examining LLM Safety Under User Delusions and Distress"
     authors: <strong>Andrew Aquilina</strong>, Chetna Nihalani, Vasudha Varadarajan, Nathan S. Fishbein, Yu-Ru Lin, Maarten Sap
     conference_short: arXiv
