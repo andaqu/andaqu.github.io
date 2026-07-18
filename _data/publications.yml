@@ -29,8 +29,8 @@ main:
 
   - title: Predicting links in a social network based on recognised personalities
     authors: <strong>Andrew Aquilina</strong>, Charlie Abela
-    conference_short: ACM/SIGAPP
-    conference: Proceedings of the 37th ACM/SIGAPP Symposium on Applied Computing
+    conference_short: SAC
+    conference: SAC 2022
     link: https://dl.acm.org/doi/10.1145/3477314.3506995
     pdf: https://dl.acm.org/doi/pdf/10.1145/3477314.3506995
     code: https://github.com/andaqu/palp-boost
