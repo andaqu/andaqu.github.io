@@ -5,7 +5,8 @@ main:
     conference_short: ICWSM
     conference: ICWSM 2027
     notes: "To appear!"
-    title_tooltip: "Pre-print coming soon!"
+    link: https://arxiv.org/abs/2608.29446
+    pdf: https://arxiv.org/pdf/2608.29446.pdf
     image: ./assets/img/distress_assessment.png
     image_position: top
 
