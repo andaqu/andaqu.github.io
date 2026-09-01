@@ -224,6 +224,44 @@ layout: homepage
   h1, h2, h3, h4, h5, h6, strong, a, p, li, td {
     transition: color .7s ease, border-color .7s ease, background-color .7s ease;
   }
+  /* Updates ---------------------------------------------------------- */
+  .updates ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 12px 2px 0;
+    max-height: 17rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(128, 128, 128, .45) transparent;
+  }
+  .updates ul::-webkit-scrollbar { width: 5px; }
+  .updates ul::-webkit-scrollbar-track { background: transparent; }
+  .updates ul::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, .35);
+    border-radius: 3px;
+  }
+  .updates ul::-webkit-scrollbar-thumb:hover { background: rgba(128, 128, 128, .55); }
+  .updates li {
+    margin: 0 0 14px;
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.55;
+  }
+  .updates li:last-child { margin-bottom: 4px; }
+  .updates li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: .6em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #39c;
+  }
+  .update-date { font-weight: 600; color: #39c; }
+  html.dark .updates li::before { background: #6cb6ff; }
+  html.dark .update-date { color: #6cb6ff; }
+
 </style>
 
 <nav class="site-nav">
@@ -267,10 +305,14 @@ Outside of research, I'm into [music](#what-am-i-listening-to), cooking, explori
 
 ## Updates
 
-* [August 2026] Happy to share that our paper, ["Lost in Delusion: Examining LLM Safety Under User Delusions and Distress"](https://arxiv.org/abs/2606.00975), has been accepted to the main conference at EMNLP 2026! 🇭🇺 See you in Budapest!
-* [April 2026] Excited to share that our workshop paper, ["Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"](https://arxiv.org/abs/2604.17079), has been selected for an oral presentation at the SocialLLM Workshop at ICWSM 2026! 🎉 See you in LA!
-* [May 2025] [Collaborated at SICSS-CMU](https://sicss.io/2025/cmu/people#:~:text=less%20impactful%20efforts.-,Andrew%20Aquilina,-Andrew%20Aquilina%20is) with an interdisciplinary team to analyse how political perceptions of AI shifted before and after ChatGPT's launch.
-* [March 2025] Presented my first Ph.D. project as a poster at the [Johns Hopkins Data Science and AI Institute Spring 2025 Symposium](assets/img/poster.jpg)!
+<div class="updates" markdown="1">
+
+* <span class="update-date">[August 2026]</span> Our paper, ["Lost in Delusion: Examining LLM Safety Under User Delusions and Distress"](https://arxiv.org/abs/2606.00975), has been accepted to the main conference at EMNLP 2026! 🇭🇺 See you in Budapest!
+* <span class="update-date">[April 2026]</span> Excited to share that our workshop paper, ["Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"](https://arxiv.org/abs/2604.17079), has been selected for an oral presentation at the SocialLLM Workshop at ICWSM 2026! 🎉 See you in LA!
+* <span class="update-date">[May 2025]</span> [Collaborated at SICSS-CMU](https://sicss.io/2025/cmu/people#:~:text=less%20impactful%20efforts.-,Andrew%20Aquilina,-Andrew%20Aquilina%20is) with an interdisciplinary team to analyse how political perceptions of AI shifted before and after ChatGPT's launch.
+* <span class="update-date">[March 2025]</span> Presented my first Ph.D. project as a poster at the [Johns Hopkins Data Science and AI Institute Spring 2025 Symposium](assets/img/poster.jpg)!
+
+</div>
 
 ## Education
 
