@@ -7,6 +7,7 @@ main:
     notes: "To appear!"
     link: https://arxiv.org/abs/2608.29446
     pdf: https://arxiv.org/pdf/2608.29446.pdf
+    code: https://github.com/andaqu/whose-distress
     image: ./assets/img/distress_assessment.png
     image_position: top
 
@@ -17,6 +18,7 @@ main:
     notes: "To appear!"
     link: https://arxiv.org/abs/2606.00975
     pdf: https://arxiv.org/pdf/2606.00975.pdf
+    code: https://github.com/andaqu/lost-in-delusion
     image: ./assets/img/delusion_paper.png
 
   - title: "Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"
