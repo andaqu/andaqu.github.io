@@ -26,66 +26,6 @@ layout: homepage
   }
   .site-nav a:hover { border-bottom-color: currentColor; }
   .site-nav a.active { border-bottom-color: currentColor; }
-  .site-nav .nav-sep {
-    padding: 0 10px;
-    opacity: 0.35;
-    font-weight: 400;
-    user-select: none;
-    pointer-events: none;
-  }
-  .view { transition: opacity .3s ease; }
-  #blog-view { display: none; opacity: 0; }
-  .blog-intro { margin-bottom: 32px; }
-  .blog-article { margin-bottom: 28px; }
-  .blog-article .article-title {
-    font-size: 1.15rem;
-    font-weight: 700;
-    margin: 0 0 2px;
-  }
-  .blog-article .article-date {
-    display: block;
-    font-size: 0.85rem;
-    opacity: 0.65;
-    margin-bottom: 6px;
-  }
-  .blog-empty { opacity: 0.7; font-style: italic; }
-  .blog-list, .blog-single { transition: opacity .3s ease; }
-  .blog-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .blog-list-item { margin: 0 0 18px; }
-  .blog-list-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-  .blog-list-link:hover .blog-list-title { text-decoration: underline; }
-  .blog-list-title {
-    display: block;
-    font-size: 1.15rem;
-    font-weight: 700;
-  }
-  .blog-list-date {
-    display: block;
-    font-size: 0.85rem;
-    opacity: 0.65;
-    margin-top: 2px;
-  }
-  .blog-single { display: none; }
-  .blog-single .blog-article { display: none; }
-  .blog-single .blog-article.active { display: block; }
-  .blog-back {
-    display: inline-block;
-    margin-bottom: 18px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  .blog-back:hover { opacity: 1; text-decoration: underline; }
   .nowplaying {
     display: flex;
     align-items: center;
@@ -266,8 +206,6 @@ layout: homepage
 
 <nav class="site-nav">
   <a href="#" class="nav-link" id="nav-about" data-view="home">About</a>
-  <span class="nav-sep">|</span>
-  <a href="#" class="nav-link" id="nav-blog" data-view="blog">Blog</a>
   <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark mode" aria-pressed="false">
     <svg class="tt-svg" viewBox="0 0 72 44" width="56" height="34" aria-hidden="true" focusable="false">
       <defs>
@@ -403,37 +341,6 @@ Outside of research, I'm into [music](#what-am-i-listening-to), cooking, explori
 
 </div>
 
-<div id="blog-view" class="view">
-  <h2>Blog</h2>
-  <div class="articles">
-    {% assign posts = site.blog | sort: 'date' | reverse %}
-    {% if posts.size > 0 %}
-      <ul class="blog-list" id="blog-list">
-        {% for post in posts %}
-        <li class="blog-list-item">
-          <a href="#" class="blog-list-link" data-index="{{ forloop.index0 }}">
-            <span class="blog-list-title">{{ post.title }}</span>
-            {% if post.date %}<time class="blog-list-date">{{ post.date | date: "%B %-d, %Y" }}</time>{% endif %}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-      <div class="blog-single" id="blog-single">
-        <a href="#" class="blog-back" id="blog-back">&larr; All posts</a>
-        {% for post in posts %}
-        <article class="blog-article" data-index="{{ forloop.index0 }}">
-          <h3 class="article-title">{{ post.title }}</h3>
-          {% if post.date %}<time class="article-date">{{ post.date | date: "%B %-d, %Y" }}</time>{% endif %}
-          {{ post.content }}
-        </article>
-        {% endfor %}
-      </div>
-    {% else %}
-      <p class="blog-empty">No articles yet — check back soon!</p>
-    {% endif %}
-  </div>
-</div>
-
 <script>
   (function () {
     var root = document.documentElement;
@@ -447,102 +354,6 @@ Outside of research, I'm into [music](#what-am-i-listening-to), cooking, explori
       var dark = root.classList.toggle('dark');
       try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
       sync();
-    });
-  })();
-
-  (function () {
-    var aboutBtn = document.getElementById('nav-about');
-    var blogBtn  = document.getElementById('nav-blog');
-    var homeView = document.getElementById('home-view');
-    var blogView = document.getElementById('blog-view');
-    var blogIntro = blogView.querySelector('.blog-intro');
-    var blogList = document.getElementById('blog-list');
-    var blogSingle = document.getElementById('blog-single');
-    var blogBack = document.getElementById('blog-back');
-    var articles = blogSingle ? blogSingle.querySelectorAll('.blog-article') : [];
-    var FADE_MS  = 300;
-
-    function setActive(link) {
-      [aboutBtn, blogBtn].forEach(function (l) { l.classList.remove('active'); });
-      if (link) link.classList.add('active');
-    }
-
-    function isBlogVisible() {
-      return blogView.style.display === 'block';
-    }
-
-    function fadeOut(el, cb) {
-      el.style.opacity = '0';
-      setTimeout(function () { el.style.display = 'none'; if (cb) cb(); }, FADE_MS);
-    }
-
-    function fadeIn(el, display) {
-      el.style.display = display || 'block';
-      el.style.opacity = '0';
-      void el.offsetWidth;
-      el.style.opacity = '1';
-    }
-
-    function showArticle(index) {
-      Array.prototype.forEach.call(articles, function (a) {
-        a.classList.toggle('active', a.getAttribute('data-index') === String(index));
-      });
-      fadeOut(blogList, function () {
-        if (blogIntro) blogIntro.style.display = 'none';
-        fadeIn(blogSingle);
-      });
-    }
-
-    function showList() {
-      fadeOut(blogSingle, function () {
-        Array.prototype.forEach.call(articles, function (a) { a.classList.remove('active'); });
-        if (blogIntro) blogIntro.style.display = '';
-        fadeIn(blogList);
-      });
-    }
-
-    // Reset the blog back to the list view (used when (re)entering the Blog tab).
-    function resetBlog() {
-      if (!blogSingle || !blogList) return;
-      Array.prototype.forEach.call(articles, function (a) { a.classList.remove('active'); });
-      blogSingle.style.display = 'none';
-      blogSingle.style.opacity = '0';
-      if (blogIntro) blogIntro.style.display = '';
-      blogList.style.display = 'block';
-      blogList.style.opacity = '1';
-    }
-
-    if (blogList) {
-      blogList.addEventListener('click', function (e) {
-        var link = e.target.closest('.blog-list-link');
-        if (!link) return;
-        e.preventDefault();
-        showArticle(link.getAttribute('data-index'));
-      });
-    }
-
-    if (blogBack) {
-      blogBack.addEventListener('click', function (e) {
-        e.preventDefault();
-        showList();
-      });
-    }
-
-    aboutBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      if (isBlogVisible()) {
-        setActive(aboutBtn);
-        fadeOut(blogView, function () { fadeIn(homeView); });
-      }
-    });
-
-    blogBtn.addEventListener('click', function (e) {
-      e.preventDefault();
-      if (!isBlogVisible()) {
-        setActive(blogBtn);
-        resetBlog();
-        fadeOut(homeView, function () { fadeIn(blogView); });
-      }
     });
   })();
 
