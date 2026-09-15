@@ -301,7 +301,7 @@ Hey! 👋 I'm Andrew. I am a Ph.D. student at the [School of Computing and Infor
 
 My research examines how socially-aware NLP systems assess and affect users' mental well-being. I've been studying this by investigating the [socially situated nature of psychological distress](https://arxiv.org/abs/2608.29446), the way language models [support users over multi-turn conversations](https://arxiv.org/abs/2604.17079), and the [risk scenarios that make chatbots harmful](https://arxiv.org/abs/2606.00975).
 
-Outside of research, I'm into [music](#what-am-i-listening-to), cooking, exploring new places... and anything creative to be honest (I've been trying out [pastel painting](assets/img/painting.jpg) lately)! I'm also from Malta, a small island in the Mediterranean. <a href="https://en.wikipedia.org/wiki/Malta"><img src="assets/img/flag.svg" alt="Maltese flag" style="height: 0.85em; vertical-align: -0.1em; border-radius: 2px;"></a>
+Outside of research, I'm into [music](#what-am-i-listening-to), [cooking](https://www.instagram.com/andrew.jiekol), exploring new places... and anything creative to be honest (I've been trying out [pastel painting](assets/img/painting.jpg) lately)! I'm also from Malta, a small island in the Mediterranean. <a href="https://en.wikipedia.org/wiki/Malta"><img src="assets/img/flag.svg" alt="Maltese flag" style="height: 0.85em; vertical-align: -0.1em; border-radius: 2px;"></a>
 
 ## Updates
 
