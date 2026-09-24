@@ -297,7 +297,7 @@ layout: homepage
 
 <div id="home-view" class="view" markdown="1">
 
-Hey! 👋 I'm Andrew. I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/). I am grateful to be working under the guidance of [Yu-Ru Lin](http://www.yurulin.com/).
+Hey! 👋 I'm Andrew. I am a Ph.D. student at the [School of Computing and Information](https://www.sci.pitt.edu/), [University of Pittsburgh](https://pitt.edu/), where I am fortunate to work under the guidance of [Yu-Ru Lin](http://www.yurulin.com/). I am also a member of the [Pitt NLP](https://www.nlp.pitt.edu/) group.
 
 My research examines how socially-aware NLP systems assess and affect users' mental well-being. I've been studying this by investigating the [socially situated nature of psychological distress](https://arxiv.org/abs/2608.29446), the way language models [support users over multi-turn conversations](https://arxiv.org/abs/2604.17079), and the [risk scenarios that make chatbots harmful](https://arxiv.org/abs/2606.00975).
 
