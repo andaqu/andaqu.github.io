@@ -19,6 +19,7 @@ main:
     link: https://arxiv.org/abs/2606.00975
     pdf: https://arxiv.org/pdf/2606.00975.pdf
     code: https://github.com/andaqu/lost-in-delusion
+    oral: true
     image: ./assets/img/delusion_paper.png
 
   - title: "Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"
