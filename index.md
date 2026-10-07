@@ -307,6 +307,7 @@ Outside of research, I'm into [music](#what-am-i-listening-to), [cooking](https:
 
 <div class="updates" markdown="1">
 
+* <span class="update-date">[October 2026]</span> Gave a guest lecture, ["From Recognition to Intervention: Audits of LLM Mental-Health Support"](https://imminent-honey-ff0.notion.site/CS-1684-2084-Fall-2026-3b9095127ed680859d20c5a79404cfc3), for CS 1684/2084: Bias and Ethical Implications in AI at Pitt! 🎓 [[Slides]](assets/files/talk1_slides.pdf)
 * <span class="update-date">[August 2026]</span> Our paper, ["Lost in Delusion: Examining LLM Safety Under User Delusions and Distress"](https://arxiv.org/abs/2606.00975), has been accepted to the main conference at EMNLP 2026! 🇭🇺 See you in Budapest!
 * <span class="update-date">[April 2026]</span> Excited to share that our workshop paper, ["Auditing Support Strategies in LLMs through Grounded Multi-Turn Social Simulation"](https://arxiv.org/abs/2604.17079), has been selected for an oral presentation at the SocialLLM Workshop at ICWSM 2026! 🎉 See you in LA!
 * <span class="update-date">[May 2025]</span> [Collaborated at SICSS-CMU](https://sicss.io/2025/cmu/people#:~:text=less%20impactful%20efforts.-,Andrew%20Aquilina,-Andrew%20Aquilina%20is) with an interdisciplinary team to analyse how political perceptions of AI shifted before and after ChatGPT's launch.
