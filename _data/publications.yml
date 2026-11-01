@@ -17,6 +17,7 @@ main:
     conference: EMNLP 2026
     link: https://aclanthology.org/2026.emnlp-main.1650/
     pdf: https://aclanthology.org/2026.emnlp-main.1650.pdf
+    video: "https://drive.google.com/file/d/1vxTZlFALUwsefCTx1lmOMWbRvSiZNTXZ/view?usp=drivesdk"
     code: https://github.com/andaqu/lost-in-delusion
     oral: true
     image: ./assets/img/delusion_paper.png
