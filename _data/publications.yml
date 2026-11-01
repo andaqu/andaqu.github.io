@@ -15,8 +15,8 @@ main:
     authors: <strong>Andrew Aquilina</strong>, Chetna Nihalani, Vasudha Varadarajan, Nathan S. Fishbein, Yu-Ru Lin, Maarten Sap
     conference_short: EMNLP
     conference: EMNLP 2026
-    link: https://arxiv.org/abs/2606.00975
-    pdf: https://arxiv.org/pdf/2606.00975.pdf
+    link: https://aclanthology.org/2026.emnlp-main.1650/
+    pdf: https://aclanthology.org/2026.emnlp-main.1650.pdf
     code: https://github.com/andaqu/lost-in-delusion
     oral: true
     image: ./assets/img/delusion_paper.png
