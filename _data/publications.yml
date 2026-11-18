@@ -1,5 +1,14 @@
 main:
 
+  - title: "“I Just Don’t Want to Be a Burden”: Investigating AI Chatbot Emotional Support Among People with Suicidal Ideation and Other Mental Health Concerns"
+    authors: Vasudha Varadarajan*, Nathan S. Fishbein*, <strong>Andrew Aquilina*</strong>, Jordan Taylor, Hong Shen, Maarten Sap
+    conference_short: arXiv
+    conference: arXiv preprint, under review at CHI 2027
+    link: https://arxiv.org/abs/2611.23190
+    pdf: https://arxiv.org/pdf/2611.23190.pdf
+    image: ./assets/img/burden_paper.png
+    image_position: bottom
+
   - title: "Whose Assessment of Distress? Community Perspectives and LLM Alignment on Well-Being Posts"
     authors: <strong>Andrew Aquilina</strong>, Xiang (Lorraine) Li, Yu-Ru Lin
     conference_short: ICWSM
